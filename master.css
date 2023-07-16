@@ -1,0 +1,342 @@
+* {
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
+	text-decoration: none;
+}
+body {
+	margin: 0;
+	background-color: black;
+	padding: 0;
+}
+.page {
+	display: flex;
+	max-height: 100vh;
+}
+.side {
+	text-align: center;
+	width: 18%;
+	padding: 30px;
+	min-height: 100vh;
+	background-color: #3b3b3b;
+	color: white;
+	gap: 30px;
+	display: flex;
+	flex-direction: column;
+}
+.side h2 {
+	font-size: 35px;
+	text-transform: capitalize;
+}
+.side i {
+	margin-right: 10px;
+}
+.side .menu p {
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 20px;
+	font-size: 20px;
+	font-weight: 700;
+	color: rgb(160, 159, 159);
+}
+.side .menu ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	gap: 60px;
+	width: 100%;
+}
+.side ul li {
+	width: 100%;
+	text-align: start;
+}
+.side .menu ul li a {
+	font-size: 20px;
+	text-decoration: none;
+	text-transform: capitalize;
+	color: white;
+	font-weight: 600;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+.side .playlist p {
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 20px;
+	font-size: 20px;
+	font-weight: 700;
+	color: rgb(160, 159, 159);
+}
+.side .playlist ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	gap: 60px;
+	width: 100%;
+}
+.side .playlist ul li a {
+	font-size: 20px;
+	text-decoration: none;
+	text-transform: capitalize;
+	color: white;
+	font-weight: 600;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+.side .playlist ul .line,
+.side .menu ul .line {
+	width: 75%;
+	height: 5px;
+	background-color: aliceblue;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+.side div ul li a:hover,
+.side div ul li.active a {
+	color: #f155e3;
+}
+.content {
+	padding: 40px;
+	width: 100%;
+}
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: white;
+	margin-bottom: 50px;
+}
+header img {
+	width: 50px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+header div {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	position: relative;
+}
+header input {
+	background-color: #3b3b3b;
+	border: none;
+	outline: none;
+	height: 50px;
+	width: 250px;
+	padding-left: 40px;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+	color: white;
+}
+header input::placeholder {
+	color: white;
+}
+header i {
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+}
+.premium {
+	background: linear-gradient(
+		to right,
+		#d100c1,
+		#d100c1,
+		#d100c0b0,
+		#d100c0b0,
+		#d100c07a,
+		#d100c05b,
+		#d100c056
+	);
+	color: white;
+	padding: 30px;
+	display: flex;
+	margin-bottom: 40px;
+}
+.premium .text {
+	width: 80%;
+}
+.premium img {
+	width: 20%;
+}
+.premium h1 {
+	font-size: 90px;
+	padding: 0;
+	text-transform: capitalize;
+	margin: 0;
+	font-family: "Calligraffitti", cursive;
+	letter-spacing: 10px;
+}
+.button {
+	display: flex;
+	width: 50%;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+.button a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 50px;
+	border-radius: 50px;
+	border: 1px #d044c3 solid;
+	text-decoration: none;
+	text-transform: capitalize;
+	color: #eb67dd;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+	font-size: 25px;
+	position: relative;
+}
+.button .button_two::after {
+	position: absolute;
+	top: 50%;
+	content: "";
+	left: 50%;
+	height: 0;
+	width: 0;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+	background-color: #f155e3;
+}
+.button .button_two:hover::after {
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+.button a p {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+	z-index: 2;
+}
+.button a:hover p {
+	color: white;
+}
+.button .button_one {
+	color: white;
+	background-color: #f155e3;
+}
+.links {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	list-style: none;
+	margin-bottom: 40px;
+}
+.links li {
+	padding: 20px 60px;
+	background-color: #3b3b3b;
+	border-radius: 50px;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+}
+.links li a {
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+}
+.links li:hover,
+.links li.active {
+	background-color: #bb00aa;
+}
+
+.musics {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.musics .music img {
+	width: 250px;
+	border-radius: 10px;
+	height: 250px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+.musics .music p {
+	color: white;
+	font-size: 30px;
+	text-align: center;
+}
+.musics a i {
+	position: absolute;
+	color: #d044c3;
+	top: 50%;
+	left: 50%;
+	z-index: 99;
+	font-size: 35px;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	opacity: 0;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+.musics a:hover i {
+	opacity: 1;
+	font-size: 50px;
+}
+.img {
+	position: relative;
+}
+.musics a p {
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+.musics a:hover p {
+	color: #d044c3;
+}
